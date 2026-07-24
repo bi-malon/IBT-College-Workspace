@@ -1,0 +1,5 @@
+--- TELEBIRR TRANSACTION REPORT ---
+miki: 480.00 ETB
+jo : 300.19 ETB
+joe : 160.00 ETB
+sofi: 150.00 ETB
