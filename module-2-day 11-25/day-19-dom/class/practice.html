@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Exercises</title>
+    <style>
+      .highlight-blue {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      .box {
+        padding: 20px;
+        margin: 10px 0;
+        background-color: #f0f0f0;
+        border: 2px dashed #999;
+      }
+      section {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Exercise 1: Heading Modification</h2>
+      <h1 id="main-heading">Old Text</h1>
+    </section>
+
+    <section>
+      <h2>Exercise 2: Ethiopian Cities List</h2>
+      <ul id="city-list"></ul>
+    </section>
+
+    <section>
+      <h2>Exercise 3: Event Bubbling (Check Browser Console)</h2>
+      <div id="parent-container" class="box">
+        <p>
+          Click the button below to see the event bubble up to this grey box.
+        </p>
+        <button id="click-btn">Click Me</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise 4: Event Delegation (Delete Items)</h2>
+      <ul id="todo-list">
+        <li>Apple <button class="delete-btn">Delete</button></li>
+        <li>Banana <button class="delete-btn">Delete</button></li>
+        <li>Orange <button class="delete-btn">Delete</button></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exercise 5: Form Submission</h2>
+      <form id="item-form">
+        <input
+          type="text"
+          id="item-input"
+          placeholder="Type something..."
+          required
+        />
+        <button type="submit">Add Item</button>
+      </form>
+      <ul id="display-list"></ul>
+    </section>
+
+    <script>
+      // Exercise 1 Code
+
+      const heading = document.querySelector("#main-heading");
+      heading.textContent = "Welcome to Week 2!";
+      heading.classList.toggle("highlight-blue");
+
+      // Exercise 2 Code
+      const cities = ["Addis Ababa", "Gondar", "Hawassa"];
+      const cityList = document.querySelector("#city-list");
+
+      cities.forEach((cityName) => {
+        const li = document.createElement("li");
+        li.textContent = cityName;
+        cityList.appendChild(li);
+      });
+
+      // Exercise 3 Code
+      const btn = document.querySelector("#click-btn");
+      const container = document.querySelector("#parent-container");
+
+      btn.addEventListener("click", (event) => {
+        console.log("Button clicked! Target:", event.target);
+      });
+
+      container.addEventListener("click", (event) => {
+        console.log("Div container clicked! Bubbled up from:", event.target);
+      });
+
+      // Exercise 4 Code
+      const todoList = document.querySelector("#todo-list");
+
+      todoList.addEventListener("click", (event) => {
+        if (event.target.classList.contains("delete-btn")) {
+          const li = event.target.parentElement;
+          li.remove();
+        }
+      });
+
+      // Exercise 5 Code
+      const form = document.querySelector("#item-form");
+      const input = document.querySelector("#item-input");
+      const displayList = document.querySelector("#display-list");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); // Stop page from refreshing
+
+        const newItemText = input.value;
+
+        const li = document.createElement("li");
+        li.textContent = newItemText;
+        displayList.appendChild(li);
+
+        input.value = ""; // Reset input field
+      });
+    </script>
+  </body>
+</html>
