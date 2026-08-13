@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Exercise 5: Complete & Valid <head> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Day 12 HTML exercises covering accessible forms, standard tables, media blocks, and screen reader fixes."
+    />
+    <title>Day 12 Exercises - Accessibility & Semantic Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Day 12: In-Class Exercises</h1>
+    </header>
+
+    <main>
+      <!-- Exercise 1: Ethio Telecom Registration Form -->
+      <section id="exercise-1">
+        <h2>Exercise 1: Ethio Telecom Service Registration</h2>
+
+        <form action="/register" method="POST">
+          <p>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required />
+          </p>
+
+          <p>
+            <label for="email-address">Email Address:</label>
+            <input
+              type="email"
+              id="email-address"
+              name="email-address"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="phone-number"
+              >Phone Number (+251 followed by 9 digits):</label
+            >
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              pattern="\+251[0-9]{9}"
+              placeholder="+251937000009"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="branch-select">Select Preferred Branch:</label>
+            <select id="branch-select" name="branch-select" required>
+              <option value="">-- Choose Branch --</option>
+              <option value="bole">Bole</option>
+              <option value="kazanchis">Megenagna</option>
+              <option value="piassa">Piassa</option>
+            </select>
+          </p>
+
+          <button type="submit">Submit Registration</button>
+        </form>
+      </section>
+
+      <hr />
+
+      <!-- Exercise 2: Ethiopian Airlines Flight Table -->
+      <section id="exercise-2">
+        <h2>Exercise 2: Ethiopian Airlines Flight Schedule</h2>
+        <table>
+          <caption>
+            Daily Domestic Flight Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Flight</th>
+              <th scope="col">From</th>
+              <th scope="col">To</th>
+              <th scope="col">Departs</th>
+              <th scope="col">Price ETB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ET 102</td>
+              <td>Addis Ababa</td>
+              <td>Bahar Dar</td>
+              <td>07:00 AM</td>
+              <td>4,500 ETB</td>
+            </tr>
+            <tr>
+              <td>ET 204</td>
+              <td>Addis Ababa</td>
+              <td>Gondar</td>
+              <td>09:30 AM</td>
+              <td>5,200 ETB</td>
+            </tr>
+            <tr>
+              <td>ET 306</td>
+              <td>Addis Ababa</td>
+              <td>Lalibela</td>
+              <td>11:15 AM</td>
+              <td>5,800 ETB</td>
+            </tr>
+            <tr>
+              <td>ET 408</td>
+              <td>Addis Ababa</td>
+              <td>Axum</td>
+              <td>01:45 PM</td>
+              <td>6,100 ETB</td>
+            </tr>
+            <tr>
+              <td>ET 510</td>
+              <td>Addis Ababa</td>
+              <td>Dire Dawa</td>
+              <td>04:00 PM</td>
+              <td>4,900 ETB</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- Exercise 3: Media Block -->
+      <section id="exercise-3">
+        <h2>Exercise 3: Landmark & Map Media Block</h2>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x300"
+            alt="Traditional Ethiopian Doro Wat served in a mesob basket"
+            loading="lazy"
+          />
+          <figcaption>
+            Freshly prepared Ethiopian Doro Wat served with Injera.
+          </figcaption>
+        </figure>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15761.538183186835!2d38.7833!3d8.9833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1600000000000"
+          width="100%"
+          height="250"
+          title="Google Map showing Ethio Telecom Bole Branch location"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <hr />
+
+      <!-- Exercise 4: Accessibility Rewrites -->
+      <section id="exercise-4">
+        <h2>Exercise 4: Accessibility Fixes</h2>
+
+        <button type="button">Submit Application</button>
+
+        <p>
+          <label for="acc-username">User Name:</label>
+          <input type="text" id="acc-username" name="acc-username" />
+        </p>
+
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Official Ethio Telecom company logo in red and blue colors"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <p>Bole, Addis Ababa, Ethiopia</p>
+    </footer>
+  </body>
+</html>

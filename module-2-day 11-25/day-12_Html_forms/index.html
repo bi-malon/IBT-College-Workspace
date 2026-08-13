@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Habesha Eatery in Bole, Addis Ababa. Reserve your table online, explore our traditional Ethiopian menu with 30% discounts, and check dish reviews."
+    />
+    <title>Habesha Eatery - Reservation, Menu &amp; Reviews</title>
+  </head>
+  <body>
+    <!-- Header & Main Navigation -->
+    <header>
+      <h1>Habesha Eatery</h1>
+      <nav aria-label="Main Navigation">
+        <a href="index.html">Reservations &amp; Menu</a> |
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Media Block: Hero Image -->
+      <section id="hero">
+        <h2>Our Traditional Ethiopian Cuisine</h2>
+        <figure>
+          <img
+            src="assets/hero.jpg"
+            alt="Freshly served Beyaynetu platter with various stews on Teff Injera"
+            width="600"
+            height="300"
+            loading="lazy"
+          />
+          <figcaption>
+            Authentic Habesha Beyaynetu platter served daily.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Table Reservation Form -->
+      <section id="reservation">
+        <h2>Table Reservation</h2>
+        <form action="/submit-reservation" method="POST">
+          <p>
+            <label for="res-name">Full Name:</label>
+            <input type="text" id="res-name" name="res-name" required />
+          </p>
+
+          <p>
+            <label for="res-email">Email Address:</label>
+            <input type="email" id="res-email" name="res-email" required />
+          </p>
+
+          <p>
+            <label for="res-phone">Phone Number (Format: 09xxxxxxxx):</label>
+            <input
+              type="tel"
+              id="res-phone"
+              name="res-phone"
+              pattern="09[0-9]{8}"
+              placeholder="0911234567"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="res-date">Reservation Date:</label>
+            <input type="date" id="res-date" name="res-date" required />
+          </p>
+
+          <p>
+            <label for="res-party">Party Size (Number of Guests):</label>
+            <input
+              type="number"
+              id="res-party"
+              name="res-party"
+              min="1"
+              max="20"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="res-requests">Special Requests:</label>
+            <textarea
+              id="res-requests"
+              name="res-requests"
+              rows="4"
+              cols="30"
+            ></textarea>
+          </p>
+
+          <button type="submit">Book Reservation</button>
+        </form>
+      </section>
+
+      <!-- Food Menu Table with Prices & Discount Badges -->
+      <section id="menu">
+        <h2>Menu &amp; Special Offers</h2>
+        <table border="1">
+          <caption>
+            Habesha Eatery Traditional Dishes, Images, and Discounted ETB
+            Pricing
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Dish Image</th>
+              <th scope="col">Dish Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Offer Tag</th>
+              <th scope="col">Price (ETB)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="assets/doro.jpg"
+                  alt="Hot spicy Doro Wat with egg"
+                  width="100"
+                  height="80"
+                />
+              </td>
+              <th scope="row">Doro Wat</th>
+              <td>
+                Spicy chicken stew with hard-boiled egg served on fresh Injera
+              </td>
+              <td>
+                <mark><strong>30% DISCOUNT</strong></mark>
+              </td>
+              <td><del>680 ETB</del> <strong>480 ETB</strong></td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="assets/kitfo.jpg"
+                  alt="Special Kitfo with spiced butter"
+                  width="100"
+                  height="80"
+                />
+              </td>
+              <th scope="row">Special Kitfo</th>
+              <td>
+                Minced beef with spiced butter (Kibe), Mitmita, and fresh Ayib
+              </td>
+              <td>
+                <mark><strong>30% DISCOUNT</strong></mark>
+              </td>
+              <td><del>750 ETB</del> <strong>525 ETB</strong></td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="assets/beyaynetu.jpg"
+                  alt="Veggie Beyaynetu combo platter"
+                  width="100"
+                  height="80"
+                />
+              </td>
+              <th scope="row">Veggie Beyaynetu</th>
+              <td>
+                Assorted fasting stews (misir, kik, gomen, shiro) on Teff Injera
+              </td>
+              <td>
+                <mark><strong>30% DISCOUNT</strong></mark>
+              </td>
+              <td><del>500 ETB</del> <strong>350 ETB</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Food Reviews & Interactive Overlay Cards Structure -->
+      <section id="reviews">
+        <h2>Popular Dishes &amp; Reviews</h2>
+
+        <article>
+          <figure>
+            <img
+              src="assets/doro.jpg"
+              alt="Signature Doro Wat served in traditional clay pot with hard-boiled eggs"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption>
+              <button type="button" aria-label="Add Doro Wat to favorites">
+                &#9825;
+              </button>
+              <div>
+                <span>&#127860;</span>
+                <a href="#doro-wat-review">View more &gt;&gt; &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+          <h3>Doro Wat Special</h3>
+          <p>
+            Rated 4.9/5 by 120 customers. "Rich berbere flavor and authentic
+            taste!"
+          </p>
+        </article>
+
+        <article>
+          <figure>
+            <img
+              src="assets/kitfo.jpg"
+              alt="Special Kitfo served with fresh Ayib cheese and Gomen on Teff Injera"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption>
+              <button type="button" aria-label="Add Special Kitfo to favorites">
+                &#9825;
+              </button>
+              <div>
+                <span>&#127860;</span>
+                <a href="#kitfo-review">View more &gt;&gt; &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+          <h3>Special Kitfo</h3>
+          <p>
+            Rated 5.0/5 by 85 customers. "Melt-in-your-mouth tender with
+            incredible spiced butter."
+          </p>
+        </article>
+
+        <article>
+          <figure>
+            <img
+              src="assets/beyaynetu.jpg"
+              alt="Colorful Veggie Beyaynetu sampler with yellow split peas, lentils, and cabbage"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption>
+              <button
+                type="button"
+                aria-label="Add Veggie Beyaynetu to favorites"
+              >
+                &#9825;
+              </button>
+              <div>
+                <span>&#127860;</span>
+                <a href="#beyaynetu-review">View more &gt;&gt; &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+          <h3>Veggie Beyaynetu</h3>
+          <p>
+            Rated 4.8/5 by 210 customers. "Best vegan platters in Bole area!"
+          </p>
+        </article>
+
+        <article>
+          <figure>
+            <img
+              src="assets/shiro.jpg"
+              alt="Shiro Tegabeno bubbling hot in a clay pot served with Teff Injera"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption>
+              <button
+                type="button"
+                aria-label="Add Shiro Tegabeno to favorites"
+              >
+                &#9825;
+              </button>
+              <div>
+                <span>&#127860;</span>
+                <a href="#shiro-review">View more &gt;&gt; &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+          <h3>Shiro Tegabeno</h3>
+          <p>
+            Rated 4.7/5 by 95 customers. "Perfectly seasoned chickpea stew
+            served piping hot."
+          </p>
+        </article>
+      </section>
+
+      <!-- Location Map -->
+      <section id="location">
+        <h2>Our Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15761.538183186835!2d38.7833!3d8.9833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1600000000000"
+          width="600"
+          height="300"
+          title="Google Map showing Habesha Eatery location in Bole, Addis Ababa"
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Habesha Eatery &bull; Bole, Addis Ababa, Ethiopia</p>
+    </footer>
+  </body>
+</html>

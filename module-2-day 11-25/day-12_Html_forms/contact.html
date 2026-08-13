@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Habesha Eatery in Bole, Addis Ababa. View our opening hours schedule or send us an inquiry."
+    />
+    <title>Contact Us - Habesha Eatery</title>
+  </head>
+  <body>
+    <!-- Accessible Landmark Header -->
+    <header>
+      <h1>Contact Habesha Eatery</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Reservations &amp; Menu</a></li>
+          <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Form Section -->
+      <section id="contact-form">
+        <h2>Send Us a Message</h2>
+        <p>
+          Have questions about catering, private events, or feedback? Send us a
+          direct message below.
+        </p>
+
+        <form action="/submit-contact" method="POST">
+          <p>
+            <label for="contact-name">Your Full Name:</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="contact-name"
+              autocomplete="name"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="contact-email">Your Email Address:</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="contact-email"
+              autocomplete="email"
+              placeholder="example@domain.com"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="contact-topic">Inquiry Topic:</label>
+            <select id="contact-topic" name="contact-topic" required>
+              <option value="">-- Choose Option --</option>
+              <option value="general">General Questions</option>
+              <option value="catering">Event Catering</option>
+              <option value="feedback">Dining Feedback</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="contact-message">Message Details:</label>
+            <textarea
+              id="contact-message"
+              name="contact-message"
+              rows="6"
+              cols="40"
+              required
+            ></textarea>
+          </p>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Opening Hours Table Section -->
+      <section id="opening-hours">
+        <h2>Weekly Operating Schedule</h2>
+        <table>
+          <caption>
+            Habesha Eatery Business Hours &amp; Meal Services
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Day of the Week</th>
+              <th scope="col">Operating Hours</th>
+              <th scope="col">Special Service</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Monday – Thursday</th>
+              <td>08:00 AM – 10:00 PM</td>
+              <td>Breakfast, Lunch &amp; Dinner</td>
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              <td>08:00 AM – 11:00 PM</td>
+              <td>Traditional Coffee Ceremony</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              <td>09:00 AM – 11:30 PM</td>
+              <td>Live Cultural Music &amp; Dinner</td>
+            </tr>
+            <tr>
+              <th scope="row">Sunday</th>
+              <td>09:00 AM – 09:30 PM</td>
+              <td>Buffet Brunch &amp; Dinner</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Global Footer Landmark -->
+    <footer>
+      <p>
+        <strong>Habesha Eatery</strong> &bull; Bole Road, Next to Cameroon St,
+        Addis Ababa, Ethiopia
+      </p>
+      <p>Phone: +251 91 123 4567 | Email: info@habeshaeatery.et</p>
+      <p>&copy; 2026 Habesha Eatery. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

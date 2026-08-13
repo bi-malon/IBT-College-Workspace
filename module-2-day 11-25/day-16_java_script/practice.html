@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBT COLLEGE Practice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0b0b0b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .calculator-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        border: #bb0e0e9d solid 2px;
+      }
+      h2 {
+        margin-top: 0;
+        color: #333;
+        text-align: center;
+      }
+      .input-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 60px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: #d86309;
+      }
+      .results {
+        margin-top: 20px;
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 6px;
+        border-left: 5px solid #e76102;
+      }
+      .results p {
+        margin: 8px 0;
+        font-size: 15px;
+        color: #444;
+        display: flex;
+        justify-content: space-between;
+      }
+      .results span {
+        font-weight: bold;
+        color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h2>TeleBirr Tip</h2>
+      <div class="input-group">
+        <label for="foodTotal">Food Total (ETB)</label>
+        <input type="number" id="foodTotal" value="50.00" step="0.01" min="0" />
+      </div>
+
+      <div class="input-group">
+        <label for="taxRate">Local Tax Rate (%)</label>
+        <input type="number" id="taxRate" value="8" step="0.1" min="0" />
+      </div>
+
+      <div class="input-group">
+        <label for="tipRate">Tip Percentage (%)</label>
+        <input type="number" id="tipRate" value="15" min="0" />
+      </div>
+
+      <div class="input-group">
+        <label for="numberOfPeople">Number of People</label>
+        <input type="number" id="numberOfPeople" value="2" min="1" />
+      </div>
+
+      <button id="calculateBtn">Calculate Split Bill</button>
+
+      <div class="results">
+        <p>Tax Amount: <span id="resTax">ETB 0.00</span></p>
+        <p>Tip Amount: <span id="resTip">ETB 0.00</span></p>
+        <p>Grand Total: <span id="resTotal">ETB 0.00</span></p>
+        <p>
+          Each Person Pays:
+          <span id="resPerPerson" style="color: #27ae60">ETB 0.00</span>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("calculateBtn")
+        .addEventListener("click", function () {
+          const food =
+            parseFloat(document.getElementById("foodTotal").value) || 0;
+          const taxPercent =
+            parseFloat(document.getElementById("taxRate").value) || 0;
+          const tipPercent =
+            parseFloat(document.getElementById("tipRate").value) || 0;
+          const people =
+            parseInt(document.getElementById("numberOfPeople").value) || 1;
+
+          const taxRateDecimal = taxPercent / 100;
+          const tipRateDecimal = tipPercent / 100;
+
+          const taxAmount = food * taxRateDecimal;
+          const subtotalWithTax = food + taxAmount;
+          const tipAmount = subtotalWithTax * tipRateDecimal;
+          const grandTotal = subtotalWithTax + tipAmount;
+          const amountPerPerson = grandTotal / people;
+
+          document.getElementById("resTax").innerText =
+            `ETB${taxAmount.toFixed(2)}`;
+          document.getElementById("resTip").innerText =
+            `ETB${tipAmount.toFixed(2)}`;
+          document.getElementById("resTotal").innerText =
+            `ETB${grandTotal.toFixed(2)}`;
+          document.getElementById("resPerPerson").innerText =
+            `ETB${amountPerPerson.toFixed(2)}`;
+        });
+    </script>
+  </body>
+</html>

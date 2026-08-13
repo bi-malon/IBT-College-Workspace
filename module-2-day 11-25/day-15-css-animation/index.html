@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeleBirr Fee & Cashout Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="calculator-container">
+      <div class="calc-header">
+        <h2>TeleBirr Cashout Calculator</h2>
+        <p>Calculate transaction fees and required balances instantly.</p>
+      </div>
+
+      <form id="calc-form" class="calc-form">
+        <div class="input-group">
+          <label for="amount">Transfer / Cashout Amount (ETB)</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="e.g. 5000"
+            min="1"
+            step="any"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="transfer-type">Transaction Type</label>
+          <select id="transfer-type">
+            <option value="agent">Agent Cashout (1.5%)</option>
+            <option value="bank">Bank Transfer (1.0%)</option>
+            <option value="p2p">Peer to Peer (0.5%)</option>
+          </select>
+        </div>
+
+        <button type="submit" id="btn-calculate">Calculate Total</button>
+      </form>
+
+      <div id="results" class="results-card hidden">
+        <h3>Calculation Summary</h3>
+        <div class="result-row">
+          <span>Base Amount:</span>
+          <strong id="res-base">0.00 ETB</strong>
+        </div>
+        <div class="result-row">
+          <span>Estimated Fee:</span>
+          <strong id="res-fee">0.00 ETB</strong>
+        </div>
+        <hr />
+        <div class="result-row total-row">
+          <span>Total Required:</span>
+          <strong id="res-total">0.00 ETB</strong>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

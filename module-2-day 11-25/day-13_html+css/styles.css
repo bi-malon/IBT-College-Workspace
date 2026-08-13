@@ -1,0 +1,109 @@
+/* CSS VARIABLES (ROOT PALETTE & SPACING SCALE) */
+:root {
+  --brand: hsl(212, 68%, 35%);
+  --brand-hover: hsl(212, 68%, 45%);
+  --accent: hsl(145, 63%, 42%);
+  --bg-color: hsl(210, 20%, 98%);
+  --card-bg: hsl(0, 0%, 100%);
+  --text-primary: hsl(215, 28%, 17%);
+  --text-muted: hsl(215, 16%, 47%);
+  --border-color: #e2e8f0;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --radius: 12px;
+}
+
+/* GLOBAL RESET & BOX SIZING */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--space-md);
+}
+
+/* CENTERED PROFILE CARD */
+.card {
+  width: 100%;
+  max-width: 380px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* TYPOGRAPHIC HIERARCHY */
+.business-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.tagline {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+/* PSEUDO-ELEMENT DECORATIVE ACCENT */
+.location-badge {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  padding-left: 18px;
+}
+
+.location-badge::before {
+  content: "•";
+  color: var(--accent);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+
+/* INTERACTIVE BUTTON WITH LIGHTNESS HOVER STATE */
+.btn-contact {
+  width: 100%;
+  padding: var(--space-md);
+  background-color: var(--brand);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-contact:hover {
+  background-color: var(--brand-hover);
+}
+
+.btn-contact:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
