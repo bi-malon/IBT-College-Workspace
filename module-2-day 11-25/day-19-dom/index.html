@@ -3,32 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM Exercises Warmup</title>
+    <title>Addis Market — Shopping List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <section>
-      <h2>Event Delegation (Delete Items)</h2>
-      <ul id="todo-list">
-        <li>Apple <button class="delete-btn">Delete</button></li>
-        <li>Banana <button class="delete-btn">Delete</button></li>
-        <li>Orange <button class="delete-btn">Delete</button></li>
-        <li>Orange <button class="delete-btn2">Ex-Delete</button></li>
-      </ul>
-    </section>
+    <div class="app-container">
+      <h1>🛒 Addis Market</h1>
 
-    <section>
-      <h2>Form Submission</h2>
-      <form id="item-form">
-        <input
-          type="text"
-          id="item-input"
-          placeholder="Type something..."
-          required
-        />
-        <button type="submit">Add Item</button>
+      <!-- ADD ITEM FORM -->
+      <form id="add-form">
+        <input type="text" id="name" placeholder="Item name" required />
+        <input type="number" id="price" placeholder="ETB" required min="1" />
+        <button type="submit">Add</button>
       </form>
-      <ul id="display-list"></ul>
-    </section>
+
+      <!-- LIST CONTAINER -->
+      <ul id="list"></ul>
+
+      <div class="total-container">Total: <span id="total">0</span> ETB</div>
+    </div>
   </body>
 </html>
