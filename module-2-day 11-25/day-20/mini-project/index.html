@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Facts Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-card">
+      <header>
+        <h1>🌍 Country Facts</h1>
+        <form id="search-form">
+          <input
+            type="text"
+            id="country-input"
+            placeholder="Enter country (e.g. Ethiopia)"
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+      </header>
+
+      <!-- Target container for loading status, facts, and error messages -->
+      <section id="facts" class="facts-container"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
