@@ -46,9 +46,6 @@ body {
   padding: 24px 16px;
 }
 
-/* ===================================================
-   STEP 2: MOBILE-FIRST BASE (1 COLUMN)
-   =================================================== */
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr; /* Default single column */
@@ -100,10 +97,6 @@ body {
   font-size: 0.875rem;
 }
 
-/* ===================================================
-   STEP 3: MEDIA QUERIES (2 & 3 COLUMNS)
-   =================================================== */
-
 /* Tablet (768px+): 2 Columns */
 @media (min-width: 768px) {
   .menu-grid {
@@ -120,11 +113,6 @@ body {
   }
 }
 
-/* ===================================================
-   STEP 4 & 5: HOVER ANIMATION & PREFERS-REDUCED-MOTION
-   =================================================== */
-
-/* Apply hover effects only if user HAS NOT enabled reduced motion */
 @media (prefers-reduced-motion: no-preference) {
   .menu-card {
     transition:
@@ -134,7 +122,7 @@ body {
   }
 
   .menu-card:hover {
-    transform: translateY(-8px) scale(1.02); /* Step 4: translateY & scale lift */
+    transform: translateY(-8px) scale(1.02);
     border-color: rgba(245, 158, 11, 0.4);
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
   }
