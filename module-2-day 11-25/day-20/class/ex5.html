@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IBT COLLEGE</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 30px;
+        background: #111;
+        color: #fff;
+      }
+      #status {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+      .loading {
+        color: #38bdf8;
+      }
+      .error {
+        color: #ef4444;
+      }
+      .success {
+        color: #22c55e;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Tiny 3-State Data Fetcher</h2>
+    <button onclick="fetchData()">Fetch Data</button>
+    <hr />
+
+    <div id="status" class="loading">Click "Fetch Data" to start</div>
+    <ul id="content"></ul>
+
+    <script>
+      async function fetchData() {
+        const statusEl = document.querySelector("#status");
+        const contentEl = document.querySelector("#content");
+
+        statusEl.className = "loading";
+        statusEl.textContent = "⏳ Loading...";
+        contentEl.innerHTML = "";
+
+        try {
+          const res = await fetch("https://dummyjson.com/recipes?limit=3");
+          if (!res.ok) throw new Error(`HTTP Error ${res.status}`);
+
+          const data = await res.json();
+
+          statusEl.className = "success";
+          statusEl.textContent = "✅ Data Loaded Successfully!";
+
+          data.recipes.forEach((recipe) => {
+            const li = document.createElement("li");
+            li.textContent = recipe.name;
+            contentEl.appendChild(li);
+          });
+        } catch (err) {
+          statusEl.className = "error";
+          statusEl.textContent =
+            "❌ Failed to load data. Network error or server offline.";
+        }
+      }
+    </script>
+  </body>
+</html>
