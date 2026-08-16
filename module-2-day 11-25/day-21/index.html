@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validated Signup Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Event Signup</h1>
+
+      <form id="signup-form">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="e.g. Binyam" />
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Ethiopian Phone Number</label>
+          <input
+            type="text"
+            id="phone"
+            placeholder="e.g. 0911223344 or +251911223344"
+          />
+        </div>
+
+        <div id="error-msg" class="error-hidden"></div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div id="counter-section" class="counter-box">
+        <p>Total Signups: <span id="signup-count">0</span></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
