@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birr Watch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Birr Watch</h1>
+        <p id="status-line" class="status-info"></p>
+      </header>
+
+      <!-- Convert Form -->
+      <section class="card">
+        <h2>Convert Birr (ETB)</h2>
+        <form id="convert-form">
+          <div class="field-group">
+            <label for="amount-input">Amount (ETB)</label>
+            <input
+              type="number"
+              id="amount-input"
+              placeholder="e.g. 1000"
+              step="any"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="currency-select">Select Currency</label>
+            <select id="currency-select" required>
+              <option value="">Loading currencies...</option>
+            </select>
+          </div>
+
+          <button type="submit">Convert</button>
+        </form>
+
+        <div id="convert-result" class="result-box">Enter an amount.</div>
+      </section>
+
+      <section class="card">
+        <h2>Watchlist</h2>
+        <form id="watchlist-form" class="inline-form">
+          <select id="watchlist-select">
+            <option value="">Select currency...</option>
+          </select>
+          <button type="submit">Add to Watchlist</button>
+        </form>
+
+        <div
+          id="watchlist-container"
+          class="watchlist-list"
+          Rendered
+          via
+          render()
+        ></div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
