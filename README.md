@@ -4,7 +4,6 @@
 
 * 🧐 Exploring new technologies and building practical web & security solutions.
 * 🎓 Studying **Full-Stack Web Development** at IBT College.
-* 🛡️ Learning **Cybersecurity** and **Data Science** at ALX.
 * 💻 Currently building projects using **JavaScript**, **Node.js**, **Python**, and modern web tech.
 * 📈 Passionate about tech, coding, and financial markets.
 
@@ -38,5 +37,5 @@
 
 ### 🤝 Connect with Me
 
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:binilove058@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_GITHUB_USERNAME)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mail to:binilove058@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/YOUR_GITHUB_USERNAME](https://github.com/bi-malon/IBT-College-Workspace))
