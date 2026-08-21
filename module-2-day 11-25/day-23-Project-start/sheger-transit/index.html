@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheger Transit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <header class="header">
+        <div class="brand">
+          <h1>Sheger Transit</h1>
+        </div>
+        <div class="header-controls">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search origin, destination..."
+          />
+          <button id="theme-toggle" class="theme-btn">Dark Mode</button>
+        </div>
+      </header>
+
+      <nav class="filter-bar">
+        <button class="filter-btn active" data-type="ALL">All Services</button>
+        <button class="filter-btn" data-type="Bus">Buses</button>
+        <button class="filter-btn" data-type="Ride">Ride / Apps</button>
+        <button class="filter-btn" data-type="Taxi">Minibus Taxis</button>
+      </nav>
+
+      <div class="content-grid">
+        <main>
+          <div id="services-container" class="cards-grid"></div>
+        </main>
+
+        <aside class="cart-sidebar card">
+          <h2>Saved Commutes</h2>
+          <div id="saved-list" class="saved-items"></div>
+          <hr />
+          <div class="cart-summary">
+            <span>Est. Daily Total:</span>
+            <strong id="total-fare">0 ETB</strong>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="footer">
+        <p>Sheger Transit — Addis Ababa Commuter Platform</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

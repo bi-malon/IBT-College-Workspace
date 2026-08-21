@@ -1,0 +1,62 @@
+[
+  {
+    "id": "BUS-101",
+    "name": "Sheger Express Line 101",
+    "type": "Bus",
+    "origin": "Megenagna",
+    "destination": "Mexico",
+    "priceETB": 15,
+    "details": "Scheduled Express • Fixed Stops • AC",
+    "status": "Active"
+  },
+  {
+    "id": "BUS-204",
+    "name": "Anbessa City Bus",
+    "type": "Bus",
+    "origin": "Bole Medhanealem",
+    "destination": "Piazza",
+    "priceETB": 12,
+    "details": "Regular City Bus • Standard Tariff",
+    "status": "Active"
+  },
+  {
+    "id": "RIDE-01",
+    "name": "Ride / Feres Taxi App",
+    "type": "Ride",
+    "origin": "Bole Airport",
+    "destination": "Kazanchis",
+    "priceETB": 280,
+    "details": "Private Sedan • On-Demand Door-to-Door",
+    "status": "Available"
+  },
+  {
+    "id": "RIDE-02",
+    "name": "ZayRide VIP Taxi",
+    "type": "Ride",
+    "origin": "CMC",
+    "destination": "Tor Hailoch",
+    "priceETB": 420,
+    "details": "Comfort Sedan • Metered Fare",
+    "status": "Available"
+  },
+  {
+    "id": "TAXI-01",
+    "name": "Blue/White Minibus Taxi",
+    "type": "Taxi",
+    "origin": "Megenagna Tera",
+    "destination": "4 Kilo",
+    "priceETB": 18,
+    "details": "Minibus (12-Seater) • Fast Hop-on",
+    "status": "Active"
+  },
+  {
+    "id": "TAXI-02",
+    "name": "Lada / Yellow City Taxi",
+    "type": "Taxi",
+    "origin": "Piazza",
+    "destination": "Mercato",
+    "priceETB": 150,
+    "details": "Direct Shared/Negotiated Rate",
+    "status": "Active"
+  }
+]
