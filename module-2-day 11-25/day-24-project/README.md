@@ -7,7 +7,7 @@ Sheger Transit Engine is a responsive web application designed for commuters in 
 ## 🔗 Project Links
 
 - 🎥 **Loom Demo Video:** [Watch Presentation Video](https://www.loom.com/share/9c8b5ba0f1974f77b30b37dcc2f37e93)
-- 🌐 **Live Application:** [View Live App](shegert.netlify.app)
+- 🌐 **Live Application:** [View Live App](https://shegert.netlify.app)
 
 ---
 
