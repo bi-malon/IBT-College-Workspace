@@ -3,12 +3,12 @@
   --card-bg: #ffffff;
   --card-overlay: rgba(255, 255, 255, 0.92);
   --brand-primary: #0284c7;
-  --brand-accent: #0f766e;
+  --brand-accent: #eef4f4;
   --accent-gold: #d97706;
-  --text-main: #1e293b;
-  --text-muted: #64748b;
+  --text-main: #e70cdc;
+  --text-muted: #e7d405;
   --border: #e2e8f0;
-  --success: #16a34a;
+  --success: #04fa5f;
   --error: #ef4444;
   --input-bg: #f8fafc;
 }
@@ -21,9 +21,9 @@
   --brand-accent: #2dd4bf;
   --accent-gold: #f59e0b;
   --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --border: #334155;
-  --success: #4ade80;
+  --text-muted: #f0f1f3;
+  --border: #fdfeff;
+  --success: #1cd861;
   --error: #f87171;
   --input-bg: #1e293b;
 }
