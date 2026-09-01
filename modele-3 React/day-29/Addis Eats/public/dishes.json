@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wat",
+    "price": 350,
+    "category": "Traditional",
+    "spicy": true
+  },
+  {
+    "id": 2,
+    "name": "Beyaynetu",
+    "price": 200,
+    "category": "Vegetarian",
+    "spicy": false
+  },
+  {
+    "id": 3,
+    "name": "Kitfo",
+    "price": 400,
+    "category": "Traditional",
+    "spicy": true
+  },
+  {
+    "id": 4,
+    "name": "Special Burger",
+    "price": 250,
+    "category": "Fast Food",
+    "spicy": false
+  },
+  {
+    "id": 5,
+    "name": "Shiro Tegabeno",
+    "price": 180,
+    "category": "Vegetarian",
+    "spicy": true
+  }
+]
