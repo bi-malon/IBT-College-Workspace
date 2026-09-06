@@ -1,0 +1,84 @@
+/* Modern CSS Reset & Baseline Setup */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  --bg-primary: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --border: #334155;
+  --radius: 12px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container Utility */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Card Component */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Component */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.25rem;
+  font-weight: 600;
+  border-radius: calc(var(--radius) - 4px);
+  border: none;
+  cursor: pointer;
+  background-color: var(--accent);
+  color: #ffffff;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
