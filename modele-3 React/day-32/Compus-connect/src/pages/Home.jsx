@@ -48,13 +48,13 @@ export default function Home() {
   return (
     <div className="page">
       <section className="hero">
-        <p className="eyebrow">Student community portal</p>
+        <p className="eyebrow">Student Community Portal</p>
         <h1 className="hero__title">
-          Everything happening on campus, in one place.
+          All academic notices, exams, and class schedules in one place.
         </h1>
         <p className="hero__subtitle">
-          Find a club worth joining, an event worth showing up for, and the
-          resources that make the rest of the semester easier.
+          Stay updated on upcoming module exams, virtual class schedules, and
+          IBT leadership townhalls without missing essential Telegram updates.
         </p>
         <div className="hero__actions">
           <Link to="/clubs" className="btn btn--gold">
