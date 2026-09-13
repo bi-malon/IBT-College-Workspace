@@ -1,0 +1,31 @@
+.search-bar {
+  position: relative;
+  max-width: 420px;
+}
+
+.search-bar__input {
+  width: 100%;
+  padding: 0.7rem 2.2rem 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper-raised);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.search-bar__input:focus {
+  border-color: var(--gold-deep);
+}
+
+.search-bar__clear {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 0.2rem 0.4rem;
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "category": "Library",
+    "name": "Main Library Research Desk",
+    "description": "One-on-one help finding sources, citing them correctly, and using databases.",
+    "hours": "Mon–Fri, 9:00 AM – 8:00 PM",
+    "location": "Main Library, 2nd Floor",
+    "link": "https://library.example.edu"
+  },
+  {
+    "id": 2,
+    "category": "Library",
+    "name": "24-Hour Study Commons",
+    "description": "Quiet and group study rooms, open around the clock during term time.",
+    "hours": "Always open",
+    "location": "Main Library, Ground Floor",
+    "link": "https://library.example.edu/commons"
+  },
+  {
+    "id": 3,
+    "category": "Academic Support",
+    "name": "Writing Center",
+    "description": "Free peer tutoring for essays, lab reports, and personal statements.",
+    "hours": "Mon–Thu, 10:00 AM – 6:00 PM",
+    "location": "Humanities Hall, Room 220",
+    "link": "https://writingcenter.example.edu"
+  },
+  {
+    "id": 4,
+    "category": "Academic Support",
+    "name": "Math & Science Tutoring Lab",
+    "description": "Drop-in tutoring for intro-level math, physics, chemistry, and biology.",
+    "hours": "Mon–Fri, 12:00 PM – 7:00 PM",
+    "location": "Science Building, Room 105",
+    "link": "https://tutoring.example.edu"
+  },
+  {
+    "id": 5,
+    "category": "Career Services",
+    "name": "Career Center Advising",
+    "description": "Resume reviews, mock interviews, and help planning your job search.",
+    "hours": "Mon–Fri, 9:00 AM – 5:00 PM",
+    "location": "Student Union, 3rd Floor",
+    "link": "https://careers.example.edu"
+  },
+  {
+    "id": 6,
+    "category": "Career Services",
+    "name": "Employer Recruiting Portal",
+    "description": "Browse internships and full-time roles from employers who recruit on campus.",
+    "hours": "Available online",
+    "location": "Online",
+    "link": "https://careers.example.edu/portal"
+  },
+  {
+    "id": 7,
+    "category": "Student Services",
+    "name": "Counseling & Wellness Center",
+    "description": "Confidential counseling, workshops, and crisis support for students.",
+    "hours": "Mon–Fri, 8:30 AM – 5:00 PM",
+    "location": "Wellness Building, 1st Floor",
+    "link": "https://wellness.example.edu"
+  },
+  {
+    "id": 8,
+    "category": "Student Services",
+    "name": "Financial Aid Office",
+    "description": "Help with scholarships, grants, work-study, and loan questions.",
+    "hours": "Mon–Fri, 9:00 AM – 4:00 PM",
+    "location": "Admin Building, Room 110",
+    "link": "https://financialaid.example.edu"
+  }
+]

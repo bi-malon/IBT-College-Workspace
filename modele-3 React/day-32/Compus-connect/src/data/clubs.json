@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Robotics Guild",
+    "category": "Technology",
+    "description": "A hands-on club for students who like building things that occasionally catch fire.",
+    "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+    "meetingInfo": "Wednesdays, 6:00 PM – Engineering Building, Room 214",
+    "members": 42,
+    "interests": ["Robotics", "Electronics", "Competitive Programming"]
+  },
+  {
+    "id": 2,
+    "name": "Fine Arts Collective",
+    "category": "Arts",
+    "description": "Painters, sculptors, and printmakers sharing studio space and critique nights.",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80",
+    "meetingInfo": "Mondays, 5:00 PM – Fine Arts Studio B",
+    "members": 28,
+    "interests": ["Painting", "Sculpture", "Printmaking"]
+  },
+  {
+    "id": 3,
+    "name": "Debate Society",
+    "category": "Academic",
+    "description": "Weekly practice rounds and travel to regional tournaments each semester.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
+    "meetingInfo": "Tuesdays, 7:00 PM – Humanities Hall, Room 108",
+    "members": 35,
+    "interests": ["Public Speaking", "Policy", "Research"]
+  },
+  {
+    "id": 4,
+    "name": "Intramural Soccer Club",
+    "category": "Sports",
+    "description": "Casual and competitive matches for players of every skill level.",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&q=80",
+    "meetingInfo": "Thursdays, 4:30 PM – South Athletic Field",
+    "members": 61,
+    "interests": ["Soccer", "Fitness", "Teamwork"]
+  },
+  {
+    "id": 5,
+    "name": "Culinary Exchange",
+    "category": "Culture",
+    "description": "Students cook and share dishes from their home countries once a month.",
+    "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80",
+    "meetingInfo": "First Friday of the month, 6:00 PM – Student Union Kitchen",
+    "members": 50,
+    "interests": ["Cooking", "Culture", "Community"]
+  },
+  {
+    "id": 6,
+    "name": "Entrepreneurship Lab",
+    "category": "Business",
+    "description": "Pitch practice, founder talks, and a small seed-funding competition each spring.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+    "meetingInfo": "Wednesdays, 5:30 PM – Business School, Room 301",
+    "members": 33,
+    "interests": ["Startups", "Pitching", "Finance"]
+  },
+  {
+    "id": 7,
+    "name": "Environmental Action Network",
+    "category": "Advocacy",
+    "description": "Campus sustainability projects, from composting to a solar-panel proposal.",
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80",
+    "meetingInfo": "Mondays, 6:30 PM – Science Building, Room 112",
+    "members": 39,
+    "interests": ["Sustainability", "Policy", "Volunteering"]
+  },
+  {
+    "id": 8,
+    "name": "Jazz Ensemble",
+    "category": "Music",
+    "description": "An open-enrollment combo that performs at campus events each semester.",
+    "image": "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&q=80",
+    "meetingInfo": "Thursdays, 7:30 PM – Music Hall, Practice Room 3",
+    "members": 18,
+    "interests": ["Jazz", "Performance", "Improvisation"]
+  }
+]

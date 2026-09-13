@@ -1,0 +1,95 @@
+.navbar {
+  background: var(--paper-raised);
+  border-bottom: 2px solid var(--ink);
+}
+
+.navbar__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: auto;
+}
+
+.navbar__mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.navbar__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__link {
+  font-weight: 500;
+  color: var(--text-muted);
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar__link:hover {
+  color: var(--ink);
+}
+
+.navbar__link--active {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
+
+.navbar__theme-toggle {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text-muted);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.navbar__theme-toggle:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+@media (max-width: 700px) {
+  .navbar__inner {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
+  .navbar__links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .navbar__link {
+    font-size: 0.85rem;
+  }
+}

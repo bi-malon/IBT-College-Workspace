@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "IBT Cybersecurity Virtual Classes",
+    "date": "Saturday, Aug 15, 2026",
+    "time": "11:00 AM – 3:00 PM",
+    "location": "Virtual (Online)",
+    "description": "We are pleased to announce that this Saturday afternoon and evening, our virtual cybersecurity classes will be led by Ionut Anghelache, IBT IT Program Director.",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
+    "organizer": "Student Life Office",
+    "category": "Campus-wide"
+  },
+  {
+    "id": 2,
+    "name": "Robotics Guild Build Night",
+    "date": "2026-09-24",
+    "time": "6:00 PM – 9:00 PM",
+    "location": "Engineering Building, Room 214",
+    "description": "Open build session ahead of the regional competition. All skill levels welcome.",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
+    "organizer": "Robotics Guild",
+    "category": "Technology"
+  },
+  {
+    "id": 3,
+    "name": "Fine Arts Fall Showcase",
+    "date": "2026-10-02",
+    "time": "5:00 PM – 8:00 PM",
+    "location": "Fine Arts Gallery",
+    "description": "An evening exhibition of student work in painting, sculpture, and print.",
+    "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80",
+    "organizer": "Fine Arts Collective",
+    "category": "Arts"
+  },
+  {
+    "id": 4,
+    "name": "Regional Debate Invitational",
+    "date": "2026-10-10",
+    "time": "8:00 AM – 6:00 PM",
+    "location": "Humanities Hall",
+    "description": "Our campus hosts eight visiting teams for a full day of tournament rounds.",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+    "organizer": "Debate Society",
+    "category": "Academic"
+  },
+  {
+    "id": 5,
+    "name": "Soccer Club vs. Riverside College",
+    "date": "2026-10-15",
+    "time": "4:30 PM – 6:00 PM",
+    "location": "South Athletic Field",
+    "description": "A friendly match against Riverside, followed by a post-game cookout.",
+    "image": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=800&q=80",
+    "organizer": "Intramural Soccer Club",
+    "category": "Sports"
+  },
+  {
+    "id": 6,
+    "name": "Global Kitchen Night",
+    "date": "2026-10-21",
+    "time": "6:00 PM – 8:30 PM",
+    "location": "Student Union Kitchen",
+    "description": "This month's theme is street food — bring a dish or just bring an appetite.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+    "organizer": "Culinary Exchange",
+    "category": "Culture"
+  },
+  {
+    "id": 7,
+    "name": "Founder Talk: From Dorm Room to Series A",
+    "date": "2026-10-28",
+    "time": "5:30 PM – 7:00 PM",
+    "location": "Business School, Room 301",
+    "description": "An alum returns to talk about building a startup straight out of college.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    "organizer": "Entrepreneurship Lab",
+    "category": "Business"
+  },
+  {
+    "id": 8,
+    "name": "Campus Cleanup Day",
+    "date": "2026-11-04",
+    "time": "9:00 AM – 12:00 PM",
+    "location": "Meet at the Science Building",
+    "description": "Gloves and bags provided. Coffee and pastries for everyone who shows up.",
+    "image": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80",
+    "organizer": "Environmental Action Network",
+    "category": "Advocacy"
+  }
+]
