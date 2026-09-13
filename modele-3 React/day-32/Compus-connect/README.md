@@ -12,7 +12,7 @@ CampusConnect is a central web application designed for students across Full-Sta
 ## 🚀 Links & Resources
 
 - 🌐 **Live Application:** [https://ibtcompus.netlify.app/](https://ibtcompus.netlify.app/)
-- 📹 **Loom Video Demo:** [https://www.loom.com/share/YOUR_LOOM_VIDEO_ID](https://www.loom.com/share/YOUR_LOOM_VIDEO_ID) _(Replace `YOUR_LOOM_VIDEO_ID` with your actual Loom video ID)_
+- 📹 **Loom Video Demo:** [https://www.loom.com/share/YOUR_LOOM_VIDEO_ID](https://www.loom.com/share/YOUR_LOOM_VIDEO_ID) \_()
 
 ---
 
