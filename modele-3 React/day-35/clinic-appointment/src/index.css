@@ -1,0 +1,257 @@
+/* src/index.css — MedQ design system: a clinic ticket/ledger, redrawn clean.
+   No build step required — plain CSS, loaded directly. */
+
+:root {
+  --ink: #1c2b27;
+  --muted: #5b6b65;
+  --paper: #f2f4f1;
+  --surface: #ffffff;
+  --line: #d9e0dc;
+  --pine: #1f4b3f;
+  --pine-dark: #163a30;
+  --marigold: #d98e2b;
+  --marigold-dark: #b9741c;
+  --brick: #b23a2e;
+  --brick-dark: #8f2d23;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.4em;
+  color: var(--ink);
+}
+h1 { font-size: 1.85rem; }
+h2 { font-size: 1.2rem; margin-top: 2rem; }
+
+a {
+  color: var(--pine);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+a:hover { border-bottom-color: currentColor; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 2px;
+}
+
+/* ---------- Shell & header ---------- */
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.75rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink);
+  border-bottom: none;
+}
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  background: var(--pine);
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.nav-links { display: flex; gap: 1.5rem; font-size: 0.9rem; }
+.nav-links a { color: var(--muted); border-bottom: none; }
+.nav-links a:hover { color: var(--pine); }
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.25rem 1.75rem 3rem;
+}
+
+.lede {
+  color: var(--muted);
+  max-width: 46ch;
+  margin: -0.2rem 0 1.5rem;
+}
+
+/* ---------- Filter select ---------- */
+select {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* ---------- Doctor ticket cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.card {
+  display: block;
+  position: relative;
+  padding: 1.1rem 1.1rem 1.1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px 4px 14px 4px;
+  border-bottom: none;
+}
+.card:hover { border-color: var(--pine); }
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 10px; bottom: 10px;
+  border-left: 2px dashed var(--line);
+}
+.card h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.2rem;
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- Ledger rows (slots, appointments) ---------- */
+.slot-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.slot-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0.1rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+.slot-list li a { border-bottom: none; }
+
+.slot-time {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-right: 0.75rem;
+}
+
+/* ---------- Stamps (status) ---------- */
+.stamp {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border: 1.5px solid currentColor;
+  border-radius: 4px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  transform: rotate(-2deg);
+}
+.stamp-upcoming, .tag-open { color: var(--pine); }
+.stamp-past { color: var(--muted); }
+.stamp-cancelled, .tag-booked { color: var(--brick); }
+
+/* legacy alias for the booked pill already in DoctorDetail.jsx */
+.tag { display: inline-block; }
+
+/* ---------- Buttons ---------- */
+.btn-small, .btn-primary, .btn-danger {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+.btn-small {
+  background: var(--marigold);
+  color: #1c1305;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+}
+.btn-small:hover { background: var(--marigold-dark); }
+
+.btn-primary {
+  background: var(--marigold);
+  color: #1c1305;
+  padding: 0.65rem 1.2rem;
+  font-size: 0.92rem;
+  align-self: flex-start;
+}
+.btn-primary:hover { background: var(--marigold-dark); }
+
+.btn-danger {
+  background: transparent;
+  color: var(--brick);
+  border: 1.5px solid var(--brick);
+  padding: 0.55rem 1rem;
+  font-size: 0.88rem;
+  margin-top: 1.25rem;
+}
+.btn-danger:hover { background: var(--brick); color: #fff; }
+
+/* ---------- Forms ---------- */
+.stacked-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 320px;
+  margin-top: 1.25rem;
+}
+.stacked-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.stacked-form input {
+  font-family: inherit;
+  font-size: 0.92rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--surface);
+}
+.stacked-form input:focus { border-color: var(--pine); }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
